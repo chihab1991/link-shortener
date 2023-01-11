@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chihab's Link Shortener</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/simplecopy.min.js""></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Short URL</h1>
+			<form class="shorten-form">
+				<div class="input-url">
+					<h2>Paste the URL to be shortened</h2>
+					<input
+						type="text"
+						name="input"
+						id="long-url"
+						placeholder="Enter the link here"
+					/><button type="submit" class="shorten-btn">Shorten URL</button>
+				</div>
+				<p class="error-msg">Please write a valid website!</p>
+			</form>
+			<div class="output">
+				<h2>Your Shortened Url: </h2>
+				<p>
+					<span class="short-url"></span
+					><button class="copy-url" disabled>copy URL</button>
+				</p>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+:root {
+    --white: rgb(234, 253, 252);
+    --blue: rgb(130, 170, 227);
+    --dark-blue: rgb(63, 123, 207);
+    --sky: rgb(191, 234, 245);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--blue);
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.container {
+    margin: 2rem auto;
+    max-width: 530px;
+}
+
+.shorten-form,
+.output {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.error-msg {
+    color: red;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.input-url h2,
+.output h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.input-url input,
+.input-url .shorten-btn,
+.copy-url,
+.short-url {
+    font-size: 1.3rem;
+    padding: 0.9rem 0.6rem;
+}
+
+.input-url input,
+.short-url {
+    width: 16rem;
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.input-url input {
+    outline: none;
+}
+
+.input-url .shorten-btn,
+.copy-url {
+    width: 10.1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 3px solid var(--blue);
+    font-weight: 600;
+}
+
+.input-url .shorten-btn:hover,
+.copy-url:hover {
+    background-color: var(--dark-blue);
+    border: 3px solid var(--dark-blue);
+}
+
+.output {
+    margin-top: 2rem;
+    opacity: 0;
+    transition-duration: 400ms;
+}
+
+.short-url {
+    height: 3.6rem;
+}
+
+.short-url,
+.copy-url,
+#long-url,
+.shorten-btn {
+    vertical-align: middle;
+}
