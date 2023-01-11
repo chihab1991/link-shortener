@@ -21,6 +21,7 @@ shortenForm.addEventListener("submit", (e) => {
 
 	const longUrl = document.getElementById("long-url");
 	const checkUrl = checkURl(longUrl.value);
+	copyUrl.innerHTML = "copy URL";
 	if (!checkUrl) return;
 
 	const options = {
